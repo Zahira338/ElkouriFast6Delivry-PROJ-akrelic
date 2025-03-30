@@ -1,10 +1,10 @@
-Structure globale du projet
+# Structure globale du projet
 fastdelivery/
 ├── produit-service/
 ├── commande-service/
 ├── livraison-service/
 └── auth-service/
-1. Microservice "Authentification"
+# # 1. Microservice "Authentification"
 mkdir auth-service
 cd auth-service
 npm init -y
@@ -24,7 +24,7 @@ Configuration de l'environnement (.env)
 MONGO_URI=mongodb://localhost:27017/auth-service
 JWT_SECRET=votre_secret_jwt
 PORT=3001
-2. Microservice "Produit"
+# # 2. Microservice "Produit"
    mkdir produit-service
 cd produit-service
 npm init -y
@@ -41,7 +41,7 @@ produit-service/
 Configuration de l'environnement (.env)
 MONGO_URI=mongodb://localhost:27017/produit-service
 PORT=3002
-3. Microservice "Commande"
+# # 3. Microservice "Commande"
  mkdir commande-service
 cd commande-service
 npm init -y
@@ -59,7 +59,7 @@ Configuration de l'environnement (.env)
 MONGO_URI=mongodb://localhost:27017/commande-service
 PORT=3003
 PRODUIT_SERVICE_URL=http://localhost:3002
-4. Microservice "Livraison"
+# # 4. Microservice "Livraison"
 mkdir livraison-service
 cd livraison-service
 npm init -y
