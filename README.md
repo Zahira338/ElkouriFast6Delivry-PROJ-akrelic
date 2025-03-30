@@ -22,8 +22,7 @@ auth-service/
 └── server.js
  # # # Configuration de l'environnement (.env)
 - MONGO_URI=mongodb://localhost:27017/auth-service
-- JWT_SECRET=votre_secret_jwt
-PORT=3001
+- PORT=3001
 # # 2. Microservice "Produit"
  - mkdir produit-service
 - cd produit-service
