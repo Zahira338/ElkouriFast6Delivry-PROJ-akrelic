@@ -10,7 +10,7 @@ fastdelivery/
 - npm init -y
 - npm install express mongoose bcryptjs jsonwebtoken dotenv
 - npm install nodemon --save-dev
-Structure du dossier
+# # # Structure du dossier
 auth-service/
 ├── models/
 │   └── User.js
@@ -20,17 +20,17 @@ auth-service/
 │   └── auth.js
 ├── .env
 └── server.js
-Configuration de l'environnement (.env)
-MONGO_URI=mongodb://localhost:27017/auth-service
-JWT_SECRET=votre_secret_jwt
+ # # # Configuration de l'environnement (.env)
+- MONGO_URI=mongodb://localhost:27017/auth-service
+- JWT_SECRET=votre_secret_jwt
 PORT=3001
 # # 2. Microservice "Produit"
-   mkdir produit-service
-cd produit-service
-npm init -y
-npm install express mongoose dotenv axios
-npm install nodemon --save-dev
- Structure du dossier
+ - mkdir produit-service
+- cd produit-service
+- npm init -y
+- npm install express mongoose dotenv axios
+- npm install nodemon --save-dev
+ # # # Structure du dossier
 produit-service/
 ├── models/
 │   └── Produit.js
@@ -38,16 +38,16 @@ produit-service/
 │   └── produit.js
 ├── .env
 └── server.js
-Configuration de l'environnement (.env)
-MONGO_URI=mongodb://localhost:27017/produit-service
-PORT=3002
+# # # Configuration de l'environnement (.env)
+- MONGO_URI=mongodb://localhost:27017/produit-service
+- PORT=3002
 # # 3. Microservice "Commande"
- mkdir commande-service
-cd commande-service
-npm init -y
-npm install express mongoose dotenv axios
-npm install nodemon --save-dev
-Structure du dossier
+-  mkdir commande-service
+- cd commande-service
+- npm init -y
+- npm install express mongoose dotenv axios
+- npm install nodemon --save-dev
+# # # Structure du dossier
 commande-service/
 ├── models/
 │   └── Commande.js
@@ -55,17 +55,17 @@ commande-service/
 │   └── commande.js
 ├── .env
 └── server.js
-Configuration de l'environnement (.env)
-MONGO_URI=mongodb://localhost:27017/commande-service
-PORT=3003
-PRODUIT_SERVICE_URL=http://localhost:3002
+# # # Configuration de l'environnement (.env)
+- MONGO_URI=mongodb://localhost:27017/commande-service
+- PORT=3003
+- PRODUIT_SERVICE_URL=http://localhost:3002
 # # 4. Microservice "Livraison"
-mkdir livraison-service
-cd livraison-service
-npm init -y
-npm install express mongoose dotenv axios
-npm install nodemon --save-dev
-Structure du dossier
+- mkdir livraison-service
+- cd livraison-service
+- npm init -y
+- npm install express mongoose dotenv axios
+- npm install nodemon --save-dev
+# # # Structure du dossier
 livraison-service/
 ├── models/
 │   └── Livraison.js
@@ -73,7 +73,7 @@ livraison-service/
 │   └── livraison.js
 ├── .env
 └── server.js
-Configuration de l'environnement (.env)
-MONGO_URI=mongodb://localhost:27017/livraison-service
-PORT=3004
-COMMANDE_SERVICE_URL=http://localhost:3003
+# # # Configuration de l'environnement (.env)
+- MONGO_URI=mongodb://localhost:27017/livraison-service
+- PORT=3004
+- COMMANDE_SERVICE_URL=http://localhost:3003
