@@ -5,11 +5,11 @@ fastdelivery/
 ├── livraison-service/
 └── auth-service/
 # # 1. Microservice "Authentification"
-mkdir auth-service
-cd auth-service
-npm init -y
-npm install express mongoose bcryptjs jsonwebtoken dotenv
-npm install nodemon --save-dev
+- mkdir auth-service
+- cd auth-service
+- npm init -y
+- npm install express mongoose bcryptjs jsonwebtoken dotenv
+- npm install nodemon --save-dev
 Structure du dossier
 auth-service/
 ├── models/
